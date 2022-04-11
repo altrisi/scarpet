@@ -13,10 +13,10 @@ __assert_player_can_cam_out(player) ->
    if(!query(player, 'nbt', 'OnGround'), exit('You must be on firm ground.'));
    if(query(player, 'nbt', 'Air') < 300, exit('You must be in air, not suffocating nor in liquids.'));
    if(player ~ 'is_burning', exit('You must not be on fire.'));
-   null
+   null;
 );
 
-// none of your business below
+// none of your business below 
 
 
 
